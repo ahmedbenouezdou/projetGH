@@ -1,0 +1,94 @@
+<link rel="stylesheet" href='app/module/myProfil/myProfil.css'>
+
+<div class="row">
+    <div  class="col-lg-3 col-sm-6">
+
+        <ul class="inbox-nav inbox-divider">
+            <li class="active">
+                <a ui-sref="account.profile" ui-sref-active="active">Profile </a>
+
+            </li>
+            <li>
+                <a ui-sref="account.security" ui-sref-active="active"> Security</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bookmark-o"></i> Important</a>
+            </li>
+            <li>
+                <a href="#"><i class=" fa fa-external-link"></i> Drafts <span class="label label-info pull-right">30</span></a>
+            </li>
+            <li>
+                <a href="#"><i class=" fa fa-trash-o"></i> Trash</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="col-lg-9 col-sm-6">
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>CREATE NEW USER</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="USERNAME">ADD USER NAME</label>
+                    <div class="col-md-4">
+                        <input id="USERNAME" name="USERNAME" type="text" placeholder="" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="ADDPASSWORD">ADD PASSWORD</label>
+                    <div class="col-md-4">
+                        <input id="ADDPASSWORD" name="ADDPASSWORD" type="text" placeholder="" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="MAILID">ADD EMAIL-ID</label>
+                    <div class="col-md-4">
+                        <input id="MAILID" name="MAILID" type="text" placeholder="" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="VILLAGENAME">VILLAGE NAME</label>
+                    <div class="col-md-4">
+                        <input id="VILLAGENAME" name="VILLAGENAME" type="text" placeholder="" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="VILLAGECODE">ADD VILLAGE CODE</label>
+                    <div class="col-md-4">
+                        <input id="VILLAGECODE" name="VILLAGECODE" type="text" placeholder="" class="form-control input-md" required="">
+
+                    </div>
+                </div>
+
+                <!-- Button (Double) -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="button1id"></label>
+                    <div class="col-md-8">
+                        <button id="button1id" name="button1id" class="btn btn-success">CREATE</button>
+                        <button id="button2id" name="button2id" class="btn btn-danger">CANCEL</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+</div>
+
+

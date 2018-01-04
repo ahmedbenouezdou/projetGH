@@ -1,0 +1,89 @@
+<link rel="stylesheet" href='app/module/validLeave/validLeave.css'>
+
+<div class="row">
+    <div class="col-xs-12 col-md-12 col-lg-12">
+
+        <h1 class="page-header"> Mes congés </h1>
+    </div>
+
+</div>
+
+
+<div class="row">
+    <form name="newFeed" novalidate>
+        <div class="col-xs-12 col-md-3 col-lg-4">
+            <div class="form-group">
+                <select class="form-control" id="sel1" ng-model="$ctrl.newLeave.title">
+                    <option>RTT</option>
+                    <option>Congés Payés</option>
+                    <option>Congés Exceptionnels</option>
+                    <option>Intercontrat</option>
+                    <option>Autres Absences</option>
+                    <option>Formation</option>
+                    <option>Maladie</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg-3">
+            <datepicker date-format="yyyy-MM-dd" selector="form-control" date-disabled-weekdays="[0,6]"
+                        date-disabled-dates="{{$ctrl.disabledDates}}">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Date debut" ng-model="$ctrl.newActiv.startsAt"
+                           ng-change="$ctrl.initDate()" required/>
+        <span class="input-group-addon" style="cursor: pointer">
+        <i class="fa fa-lg fa-calendar"></i>
+        </span>
+                </div>
+            </datepicker>
+        </div>
+
+        <div class="col-xs-12 col-md-3 col-lg-3">
+            <datepicker date-format="yyyy-MM-dd" selector="form-control" date-disabled-weekdays="[0,6]"
+                        date-min-limit="{{$ctrl.newActiv.startsAt}}" date-disabled-dates="{{$ctrl.disabledDates}}">
+                <div class="input-group">
+                    <input class="form-control" placeholder="Date Fin" ng-model="$ctrl.newActiv.endsAt" type="text"
+                           required/>
+        <span class="input-group-addon" style="cursor: pointer">
+        <i class="fa fa-lg fa-calendar"></i>
+        </span>
+                </div>
+            </datepicker>
+        </div>
+
+        <div class="col-xs-12 col-md-3 col-lg-2">
+            <button type="button" class="btn btn-success btn-circle" ng-click="$ctrl.addLeave()"
+                    ng-disabled="!newFeed.$valid">
+                <i class="fa glyphicon-plus"></i>
+            </button>
+        </div>
+    </form>
+</div>
+
+<div class="row">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Date debut</th>
+            <th>Date Fin</th>
+            <th>Nombre de jour</th>
+            <th>Etat</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="leave in $ctrl.listLeave">
+            <td>{{leave.title}}</td>
+            <td>{{leave.startsAt}}</td>
+            <td>{{leave.endsAt}}</td>
+            <td>{{leave.nbday}}</td>
+            <td>
+                <button type="button" class="btn btn-danger btn-circle" ng-click="$ctrl.removeLeave($index)"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-success btn-circle" ng-click="$ctrl.removeEditLeave($index)"><i class="fa fa-pencil"></i>
+                </button>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>

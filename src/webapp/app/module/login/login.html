@@ -1,0 +1,43 @@
+<link rel="stylesheet" href='app/module/login/login.css'>
+<div class="container">
+
+    <section>
+
+        <div id="container_demo">
+            <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+            <a class="hiddenanchor" id="toregister"></a>
+            <a class="hiddenanchor" id="tologin"></a>
+
+            <div id="wrapper">
+                <div id="login" class="animate form">
+                    <form name="form" ng-submit="ctrl.login()" role="form" autocomplete="on">
+                        <h1>Log in</h1>
+
+                        <p>
+                            <label for="username" class="uname"> Your email or username </label>
+                            <input type="text" name="username" id="username" ng-model="ctrl.username" required
+                                   placeholder="Your email or username"/>
+                            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+                        </p>
+
+                        <p>
+                            <label for="password" class="youpasswd"> Your password </label>
+                            <input id="password" name="password" required="required" type="password"
+                                   placeholder="eg. X8df!90EO"/>
+                        </p>
+
+                        <p class="change_link">
+                            <button type="submit" ng-disabled="form.$invalid || ctrl.dataLoading" class="btn btn-primary">
+                                Login
+                            </button>
+
+                        </p>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+</div>
+

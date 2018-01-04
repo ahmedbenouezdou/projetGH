@@ -1,0 +1,182 @@
+
+        <div class="row">
+            <div class="col-md-10 ">
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>User profile form requirement</legend>
+
+                        <!-- Text input-->
+
+                        <!-- Multiple Radios (inline) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Gender</label>
+                            <div class="col-md-4">
+                                <label class="radio-inline" for="Gender-0">
+                                    <input type="radio" name="Gender" id="Gender-0" value="1" ng-model="ctrl.user.gender">
+                                    Male
+                                </label>
+                                <label class="radio-inline" for="Gender-1">
+                                    <input type="radio" name="Gender" id="Gender-1" value="2" ng-model="ctrl.user.gender">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="Name">Nom</label>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-user">
+                                        </i>
+                                    </div>
+                                    <input id="Name" name="Name" type="text" placeholder="Nom" class="form-control input-md" ng-model="ctrl.user.name">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Prénom</label>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-male" style="font-size: 20px;"></i>
+
+                                    </div>
+                                    <input id="Father" name="Father" type="text" placeholder="Prénom" class="form-control input-md" ng-model="ctrl.user.firstName">
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="Date Of Birth">Date Of Birth</label>
+                            <div class="col-md-4">
+
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-birthday-cake"></i>
+
+                                    </div>
+                                    <input id="Date Of Birth" name="Date Of Birth" type="text" placeholder="Date Of Birth" class="form-control input-md" ng-model="ctrl.user.dateOfBirth">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="Email Address">Email Address</label>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-envelope-o"></i>
+
+                                    </div>
+                                    <input id="Email Address" name="Email Address" type="text" placeholder="Email Address" class="form-control input-md" ng-model="ctrl.user.email">
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- Multiple Radios (inline) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" >Marital Status:</label>
+                            <div class="col-md-4">
+                                <label class="radio-inline" for="radios-0">
+                                    <input type="radio" name="radios" id="radios-0" value="1" checked="checked"  ng-model="ctrl.user.maritalStatus">
+                                    Married
+                                </label>
+                                <label class="radio-inline" for="radios-1">
+                                    <input type="radio" name="radios" id="radios-1" value="2"  ng-model="ctrl.user.maritalStatus">
+                                    Unmarried
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label col-xs-12" for="Permanent Address">Permanent Address</label>
+                            <div class="col-md-4">
+                                <input id="Permanent Address" name="Permanent Address" type="text" placeholder="District" class="form-control input-md" ng-model="ctrl.user.address.rue">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="Permanent Address"></label>
+                            <div class="col-md-2  col-xs-4">
+                                <input id="Permanent Address2" name="Permanent Address" type="text" placeholder="Street" class="form-control input-md" ng-model="ctrl.user.address.ville">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="Permanent Address"></label>
+                            <div class="col-md-2  col-xs-4">
+                                <input id="Permanent Address3" name="Permanent Address" type="text" placeholder="Street" class="form-control input-md" ng-model="ctrl.user.address.codeVille">
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="Date Of Birth">Primary Occupation</label>
+                            <div class="col-md-4">
+
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-birthday-cake"></i>
+
+                                    </div>
+                                    <input id="Primary Occupation" name="Date Of Birth" type="text" placeholder="Date Of Birth" class="form-control input-md" ng-model="ctrl.user.primaryOccupation">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="Phone number">Phone number </label>
+                            <div class="col-md-4">
+
+                                <div class="input-group othertop">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-mobile fa-1x" style="font-size: 20px;"></i>
+
+                                    </div>
+                                    <input id="Phone number" name="Secondary Phone number " type="text" placeholder=" Secondary Phone number " class="form-control input-md" ng-model="ctrl.user.phoneNumber">
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" ></label>
+                            <div class="col-md-4">
+                                <a class="btn btn-success" ng-click="ctrl.updatEditUser()"><span class="glyphicon glyphicon-thumbs-up"></span> Submit</a>
+                                <a class="btn btn-danger" ng-click="ctrl.cleanEditUser()"><span class="glyphicon glyphicon-remove-sign"></span> Clear</a>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-md-2 hidden-xs">
+                <img src="http://websamplenow.com/30/userprofile/images/avatar.jpg" class="img-responsive img-thumbnail ">
+            </div>
+
+
+        </div>
+
+
