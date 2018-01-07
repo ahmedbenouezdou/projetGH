@@ -6,12 +6,5 @@ angular.module('profilModule').config(function($stateProvider) {
                 component: 'profilComponent'
             }
         }
-    }).state('account.editUser',{
-        url: '/editUser/?:idUser',
-        views: {
-            "detail":{
-                component: 'editUserComponent'
-            }
-        }
     });
 });

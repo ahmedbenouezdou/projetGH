@@ -9,12 +9,14 @@ var jsonContent = JSON.parse(contents);
 console.log("host:", jsonContent.host);
 console.log("user:", jsonContent.user);
 console.log("Password:", jsonContent.password);
+console.log("database:", jsonContent.database);
 
 
 var con = mysql.createConnection({
     host: jsonContent.host,
     user: jsonContent.user,
-    password: jsonContent.password
+    password: jsonContent.password,
+    database: jsonContent.database
 });
 
 con.connect(function(err) {

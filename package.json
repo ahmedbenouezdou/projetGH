@@ -45,6 +45,7 @@
     "gulp-sass": "*",
     "gulp-uglify": "*",
     "gulp-util": "*",
+    "moment": "^2.20.1",
     "mongodb": "^2.2.9",
     "mysql": "^2.15.0",
     "require-dir": "*",
