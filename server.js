@@ -1,7 +1,7 @@
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
-var greetings = require("./src/service/activities/activitiesService");
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+const greetings = require("./src/service/activities/activitiesService");
 
 
 
