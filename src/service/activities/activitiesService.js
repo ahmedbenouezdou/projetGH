@@ -27,7 +27,7 @@ exports.getActivities = function getActivities(req, response) {
 };
 
 exports.addActivities =function addActivities(req, response) {
-    console.log(requetSql.insertSQl());
+    console.log(req.body);
       response.end();
 
 };
