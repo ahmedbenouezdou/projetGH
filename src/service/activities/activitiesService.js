@@ -27,13 +27,13 @@ exports.getActivities = (req, response) =>{
 };
 
 exports.addActivities =(req, response) =>{
-    console.log(req.body.data);
+    console.log(req.body.id);
     var tab=[];
     var infoTab=[];
 
     req.body.data.forEach((element)=>{
         infoTab=[];
-        infoTab.push([req.body.id,element.startsAt,element.endsAt,element.etat,element.title])
+        infoTab.push([element.title,new Date(element.startsAt),new Date(element.endsAt),true,true,req.body.id]);
         tab.push(infoTab);
     });
 
