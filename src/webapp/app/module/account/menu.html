@@ -1,39 +1,52 @@
-<!-- Navigation -->
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" ui-sref="home">My BeeZen</a>
+
+    <div class="sidebar-wrapper">
+        <div class="logo">
+            <a href="http://beezen.fr" class="simple-text">
+                <img class="light" src="http://beezen.fr/wp-content/uploads/2016/01/logo-light@2x.png"
+                     style="width: 30px; height: 23px; " alt="Logo"> MyBeeZen </a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a ui-sref="account.home" ui-sref-active="active">Home</a></li>
-                <li><a ui-sref="account.activities" ui-sref-active="active"><i class="fa fa-dashboard fa-fw"></i> Activities</a>
-                </li>
-                <li><a ui-sref="account.leaveRequest" ui-sref-active="active">Mes congés</a></li>
-                <li><a ui-sref="account.leaveRequest" ui-sref-active="active">MyBeeCooptation</a></li>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" ui-sref="account.home" ui-sref-active="active">
+                    <i class="nc-icon nc-chart-pie-35"></i>
 
-                <li class="dropdown">
-                    <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestion Ressource<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a ui-sref="account.user" ui-sref-active="active">Utilisateur</a></li>
-                        <li><a ui-sref="account.validCRA" ui-sref-active="active">Valider activitie</a></li>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li><a class="nav-link"  ui-sref="account.activities" ui-sref-active="active">
+                <i class="fa fa-dashboard fa-fw"></i> Activities</a>
+            </li>
+            <li>
+                <a class="nav-link" href="./user.html">
+                    <i class="nc-icon nc-circle-09"></i>
 
-                    </ul>
-                </li>
-            </ul>
+                    <p>User Profile</p>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="./table.html">
+                    <i class="nc-icon nc-notes"></i>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a ui-sref="account.myProfil" ui-sref-active="active"><span class="glyphicon glyphicon-user"></span> Ben Ouezdou Ahmed</a></li>
-                <li><a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span> Login out</a></li>
-            </ul>
-        </div>
+                    <p>Table Activity</p>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" ui-sref="account.activities" ui-sref-active="active">
+                    <i class="nc-icon nc-paper-2"></i>
 
+                    <p>Me Activity</p>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="./icons.html">
+                    <i class="nc-icon nc-atom"></i>
+
+                    <p>Icons</p>
+                </a>
+            </li>
+
+            <li><a class="nav-link" ui-sref="account.leaveRequest" ui-sref-active="active">Mes congés</a></li>
+            <li><a class="nav-link" ui-sref="account.leaveRequest" ui-sref-active="active">MyBeeCooptation</a></li>
+
+        </ul>
     </div>
-
-</nav>
-

@@ -8,10 +8,10 @@ module.exports ={
             console.log(fields);
         });
     },
-    insertActiviter:(activite) =>{
+    insertActiviter:(activites) =>{
 
         var sql = "INSERT INTO gh_activite (titleActivite,dateDebut,dateFin,typeACtivite,validActivite,idUser) VALUES ?";
-        con.query(sql, [activite], function (err, result) {
+        con.query(sql, [activites], function (err, result) {
             if (err) throw err;
             console.log("Number of records inserted: " + result.affectedRows);
         });
