@@ -45,7 +45,14 @@ appPersonnel.config(function($stateProvider,$urlRouterProvider) {
                 templateUrl: 'app/module/account/account.html'
             }
         }
-    }).state(validDemande).state(gestionPersonnel).state(profil);
+    }).state(validDemande).state(gestionPersonnel).state(profil).state('account.validDemande',{
+        url: '/validDemande',
+        views: {
+            "detail":{
+                templateUrl: 'app/module/validLeave/demandeLeave.html'
+            }
+        }
+    });;
 
     $urlRouterProvider.otherwise('account/home');
 });
