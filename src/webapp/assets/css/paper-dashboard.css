@@ -1008,7 +1008,6 @@ textarea.form-control {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 12px;
   vertical-align: middle; }
 .table .th-description {
   max-width: 150px; }
