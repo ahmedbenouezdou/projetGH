@@ -25,6 +25,8 @@ function leaveRequestComponent() {
             endsAt:ctrl.newActiv.endsAt,
             nbday:diffdate(moment(ctrl.newActiv.startsAt, "YYYY-MM-DD").startOf('day').toDate(),moment(ctrl.newActiv.endsAt, "YYYY-MM-DD").startOf('day').toDate(),'d')
         });
+        ctrl.newActiv.startsAt="";
+        ctrl.newActiv.endsAt="";
         ctrl.newLeave={};
     };
 

@@ -17,24 +17,23 @@
      <!-- inject:css-->
      <link rel="stylesheet" href="css/angular-datepicker.css">
      <link rel="stylesheet" href="css/angular-datepicker.min.css">
+     <link rel="stylesheet" href="css/animate.min.css">
      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
      <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/demo.css">
      <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/fontsgoogleapis.css">
      <link rel="stylesheet" href="css/morris.css">
+     <link rel="stylesheet" href="css/paper-dashboard.css">
+     <link rel="stylesheet" href="css/themify-icons.css">
      <!-- endinject -->
-    <link href="assets/css/animate.min.css" rel="stylesheet"/>
-    <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
-    <link href="assets/css/demo.css" rel="stylesheet" />
-
-
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
-    <link href="assets/css/themify-icons.css" rel="stylesheet">
 
 </head>
-<body>
+<body ng-app='appPersonnel'>
 
-<div class="wrapper" ng-app='appPersonnel'>
+
+<div class="wrapper" >
+
     <div class="sidebar" data-background-color="white" data-active-color="danger">
             <div ui-view="menu"></div>
     </div>
@@ -57,7 +56,7 @@
                             <a href="" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="ti-user"></i>
 								<p>Ben Ouezdou Ahmed</p>
-                                <i class="ti-hand-point-right"></i>
+                                <i class="ti-power-off"></i>
                             </a>
                         </li>
                     </ul>
@@ -97,7 +96,7 @@
                     </ul>
                 </nav>
                 <div class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>
+                    &copy; <script>document.write(new Date().getFullYear())</script><a href="http://beezen.fr/">Beezen</a>
                 </div>
             </div>
         </footer>
@@ -119,37 +118,37 @@
 <script src="assets/js/jquery-1.10.2.js"></script>
 <script src="assets/js/paper-dashboard.js"></script>
 <script src="app/library/calendar/calendarComponent.js"></script>
+<script src="app/library/directive/donutChart.js"></script>
 <script src="app/library/dayManagement/dayManagement.js"></script>
+<script src="app/module/CRA/validCRAComponents.js"></script>
+<script src="app/module/CRA/validCRAService.js"></script>
+<script src="app/module/CRA/validCRAState.js"></script>
 <script src="app/module/activities/activitiesComponent.js"></script>
 <script src="app/module/activities/activitiesService.js"></script>
 <script src="app/module/activities/activitiesState.js"></script>
 <script src="app/module/gestionPersonnel/gestionPersonnelComponents.js"></script>
 <script src="app/module/gestionPersonnel/gestionPersonnelService.js"></script>
-<script src="app/library/directive/donutChart.js"></script>
-<script src="app/module/CRA/validCRAComponents.js"></script>
-<script src="app/module/CRA/validCRAService.js"></script>
-<script src="app/module/CRA/validCRAState.js"></script>
 <script src="app/module/home/homeComponents.js"></script>
 <script src="app/module/home/homeService.js"></script>
 <script src="app/module/home/homeState.js"></script>
 <script src="app/module/leave/leaveState.js"></script>
-<script src="app/module/profil/profilComponent.js"></script>
-<script src="app/module/profil/profilService.js"></script>
-<script src="app/module/profil/profilState.js"></script>
-<script src="app/module/myProfil/myProfilComponent.js"></script>
-<script src="app/module/myProfil/myProfilService.js"></script>
-<script src="app/module/myProfil/myProfilState.js"></script>
-<script src="app/module/validLeave/demandeLeaveComponents.js"></script>
-<script src="app/module/validLeave/demandeLeaveService.js"></script>
-<script src="app/module/user/userComponents.js"></script>
-<script src="app/module/user/userService.js"></script>
-<script src="app/module/user/userState.js"></script>
 <script src="app/module/login/loginComponent.js"></script>
 <script src="app/module/login/loginService.js"></script>
 <script src="app/module/login/loginState.js"></script>
-<script src="app/module/user/editUser/editUserComponents.js"></script>
+<script src="app/module/myProfil/myProfilComponent.js"></script>
+<script src="app/module/myProfil/myProfilService.js"></script>
+<script src="app/module/myProfil/myProfilState.js"></script>
+<script src="app/module/profil/profilComponent.js"></script>
+<script src="app/module/profil/profilService.js"></script>
+<script src="app/module/profil/profilState.js"></script>
+<script src="app/module/user/userComponents.js"></script>
+<script src="app/module/user/userService.js"></script>
+<script src="app/module/user/userState.js"></script>
+<script src="app/module/validLeave/demandeLeaveComponents.js"></script>
+<script src="app/module/validLeave/demandeLeaveService.js"></script>
 <script src="app/module/leave/request/leaveRequestComponent.js"></script>
 <script src="app/module/leave/request/leaveRequestService.js"></script>
+<script src="app/module/user/editUser/editUserComponents.js"></script>
 <!-- endinject -->
 
 </html>

@@ -52,7 +52,7 @@ appPersonnel.config(function($stateProvider,$urlRouterProvider) {
                 templateUrl: 'app/module/validLeave/demandeLeave.html'
             }
         }
-    });;
+    });
 
     $urlRouterProvider.otherwise('account/home');
 });
