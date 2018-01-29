@@ -110,8 +110,8 @@ function activitiesController(moment, calendarConfig, activitiesService,profilSe
         ctrl.monthYears = moment(new Date(ctrl.years, ctrl.month, 1)).format("MMMM YYYY");
 
         ctrl.monthevents = {
-            month: new Date(new Date(moment(new Date(ctrl.years, ctrl.month, 1)).format("YYYY"), ctrl.month, 1)).getMonth(),
-            years: new Date(new Date(moment(new Date(ctrl.years, ctrl.month, 1)).format("YYYY"), ctrl.month, 1)).getUTCFullYear(),
+            month: new Date(new Date(moment(new Date(new Date().getUTCFullYear(), ctrl.month, 1)).format("YYYY"), ctrl.month, 1)).getMonth(),
+            years: moment(new Date(new Date().getUTCFullYear(), ctrl.month, 1)).format("YYYY"),
             events: ctrl.events
         };
     };
@@ -122,8 +122,8 @@ function activitiesController(moment, calendarConfig, activitiesService,profilSe
         ctrl.monthYears = moment(new Date(ctrl.years, ctrl.month, 1)).format("MMMM YYYY");
 
         ctrl.monthevents = {
-            month: new Date(new Date(moment(new Date(ctrl.years, ctrl.month, 1)).format("YYYY"), ctrl.month, 1)).getMonth(),
-            years: new Date(new Date(moment(new Date(ctrl.years, ctrl.month, 1)).format("YYYY"), ctrl.month, 1)).getUTCFullYear(),
+            month: new Date(new Date(moment(new Date(new Date().getUTCFullYear(), ctrl.month, 1)).format("YYYY"), ctrl.month, 1)).getMonth(),
+            years: moment(new Date(new Date().getUTCFullYear(), ctrl.month, 1)).format("YYYY"),
             events: ctrl.events
         };
 
