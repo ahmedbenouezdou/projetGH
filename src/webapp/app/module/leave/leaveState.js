@@ -3,6 +3,9 @@ angular.module('leaveRequestModule').config(function($stateProvider) {
         name: 'account.leaveRequest',
         url: '/leaveRequest',
         views: {
+            menu:{
+                templateUrl: 'app/module/account/menu.html'
+            },
             'detail':{
                 component: 'leaveRequestComponent'
             }

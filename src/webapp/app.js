@@ -38,9 +38,6 @@ appPersonnel.config(function($stateProvider,$urlRouterProvider) {
     $stateProvider .state('account', {
         url: "/account",
         views: {
-            menu:{
-                templateUrl: 'app/module/account/menu.html'
-            },
             account:{
                 templateUrl: 'app/module/account/account.html'
             }
@@ -48,6 +45,9 @@ appPersonnel.config(function($stateProvider,$urlRouterProvider) {
     }).state(validDemande).state(gestionPersonnel).state(profil).state('account.validDemande',{
         url: '/validDemande',
         views: {
+            menu:{
+                templateUrl: 'app/module/account/menu.html'
+            },
             "detail":{
                 templateUrl: 'app/module/validLeave/demandeLeave.html'
             }

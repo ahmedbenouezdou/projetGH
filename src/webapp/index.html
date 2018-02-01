@@ -1,113 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-	<title>Beezen Admin</title>
+    <title>Beezen Admin</title>
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
-
-
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="viewport" content="width=device-width"/>
 
 
-     <!-- inject:css-->
-     <link rel="stylesheet" href="css/angular-datepicker.css">
-     <link rel="stylesheet" href="css/angular-datepicker.min.css">
-     <link rel="stylesheet" href="css/animate.min.css">
-     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/demo.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/fontsgoogleapis.css">
-     <link rel="stylesheet" href="css/morris.css">
-     <link rel="stylesheet" href="css/paper-dashboard.css">
-     <link rel="stylesheet" href="css/themify-icons.css">
-     <!-- endinject -->
+    <!-- inject:css-->
+    <link rel="stylesheet" href="css/angular-datepicker.css">
+    <link rel="stylesheet" href="css/angular-datepicker.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontsgoogleapis.css">
+    <link rel="stylesheet" href="css/morris.css">
+    <link rel="stylesheet" href="css/paper-dashboard.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- endinject -->
 
 </head>
 <body ng-app='appPersonnel'>
 
 
-<div class="wrapper" >
-
-    <div class="sidebar" data-background-color="white" data-active-color="danger" data-image="assets/img/sidebar-5.jpg">
-            <div ui-view="menu"></div>
-    </div>
-
-    <div class="main-panel">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar bar1"></span>
-                        <span class="icon-bar bar2"></span>
-                        <span class="icon-bar bar3"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Dashboard</a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="ti-user"></i>
-								<p>Ben Ouezdou Ahmed</p>
-                                <i class="ti-power-off"></i>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
 
 
-        <div class="content">
-            <div class="container-fluid">
-                <div ui-view="account"></div>
-            </div>
-        </div>
-
-
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-
-                        <li>
-                            <a href="http://www.creative-tim.com">
-                                Creative Tim
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://blog.creative-tim.com">
-                               Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.creative-tim.com/license">
-                                Licenses
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script><a href="http://beezen.fr/">Beezen</a>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-</div>
+            <div ui-view="login"></div>
+            <div ui-view="account"></div>
 
 
 </body>
 
-  	<!-- inject:js -->
+<!-- inject:js -->
 <script src="js/vendor.js"></script>
 <script src="app.js"></script>
 <script src="assets/js/bootstrap-checkbox-radio.js"></script>
@@ -117,35 +48,35 @@
 <script src="assets/js/demo.js"></script>
 <script src="assets/js/jquery-1.10.2.js"></script>
 <script src="assets/js/paper-dashboard.js"></script>
-<script src="app/module/CRA/validCRAComponents.js"></script>
-<script src="app/module/CRA/validCRAService.js"></script>
-<script src="app/module/CRA/validCRAState.js"></script>
 <script src="app/module/activities/activitiesComponent.js"></script>
 <script src="app/module/activities/activitiesService.js"></script>
 <script src="app/module/activities/activitiesState.js"></script>
-<script src="app/module/gestionPersonnel/gestionPersonnelComponents.js"></script>
-<script src="app/module/gestionPersonnel/gestionPersonnelService.js"></script>
-<script src="app/module/leave/leaveState.js"></script>
-<script src="app/module/home/homeComponents.js"></script>
-<script src="app/module/home/homeService.js"></script>
-<script src="app/module/home/homeState.js"></script>
+<script src="app/module/CRA/validCRAComponents.js"></script>
+<script src="app/module/CRA/validCRAService.js"></script>
+<script src="app/module/CRA/validCRAState.js"></script>
 <script src="app/module/login/loginComponent.js"></script>
 <script src="app/module/login/loginService.js"></script>
 <script src="app/module/login/loginState.js"></script>
+<script src="app/module/leave/leaveState.js"></script>
+<script src="app/module/gestionPersonnel/gestionPersonnelComponents.js"></script>
+<script src="app/module/gestionPersonnel/gestionPersonnelService.js"></script>
+<script src="app/module/profil/profilComponent.js"></script>
+<script src="app/module/profil/profilService.js"></script>
+<script src="app/module/profil/profilState.js"></script>
 <script src="app/module/myProfil/myProfilComponent.js"></script>
 <script src="app/module/myProfil/myProfilService.js"></script>
 <script src="app/module/myProfil/myProfilState.js"></script>
 <script src="app/module/myProfil/securityComponent.js"></script>
-<script src="app/module/profil/profilComponent.js"></script>
-<script src="app/module/profil/profilService.js"></script>
-<script src="app/module/profil/profilState.js"></script>
+<script src="app/module/validLeave/demandeLeaveComponents.js"></script>
+<script src="app/module/validLeave/demandeLeaveService.js"></script>
 <script src="app/module/user/userComponents.js"></script>
 <script src="app/module/user/userService.js"></script>
 <script src="app/module/user/userState.js"></script>
-<script src="app/module/validLeave/demandeLeaveComponents.js"></script>
-<script src="app/module/validLeave/demandeLeaveService.js"></script>
-<script src="app/library/dayManagement/dayManagement.js"></script>
+<script src="app/module/home/homeComponents.js"></script>
+<script src="app/module/home/homeService.js"></script>
+<script src="app/module/home/homeState.js"></script>
 <script src="app/library/directive/donutChart.js"></script>
+<script src="app/library/dayManagement/dayManagement.js"></script>
 <script src="app/library/calendar/calendarComponent.js"></script>
 <script src="app/module/leave/request/leaveRequestComponent.js"></script>
 <script src="app/module/leave/request/leaveRequestService.js"></script>

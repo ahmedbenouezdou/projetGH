@@ -1,43 +1,21 @@
-<link rel="stylesheet" href='app/module/login/login.css'>
-<div class="container">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="text-center">Welcome</h1>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="Username"/>
+            </div>
 
-    <section>
+            <div class="form-group">
+                <input type="password" class="form-control input-lg" placeholder="Password"/>
+            </div>
 
-        <div id="container_demo">
-            <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
-            <a class="hiddenanchor" id="toregister"></a>
-            <a class="hiddenanchor" id="tologin"></a>
-
-            <div id="wrapper">
-                <div id="login" class="animate form">
-                    <form name="form" ng-submit="ctrl.login()" role="form" autocomplete="on">
-                        <h1>Log in</h1>
-
-                        <p>
-                            <label for="username" class="uname"> Your email or username </label>
-                            <input type="text" name="username" id="username" ng-model="ctrl.username" required
-                                   placeholder="Your email or username"/>
-                            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
-                        </p>
-
-                        <p>
-                            <label for="password" class="youpasswd"> Your password </label>
-                            <input id="password" name="password" required="required" type="password"
-                                   placeholder="eg. X8df!90EO"/>
-                        </p>
-
-                        <p class="change_link">
-                            <button type="submit" ng-disabled="form.$invalid || ctrl.dataLoading" class="btn btn-primary">
-                                Login
-                            </button>
-
-                        </p>
-                    </form>
-                </div>
-
-
+            <div class="form-group">
+                <input type="submit" class="btn btn-block btn-lg btn-primary" value="Login"/>
+                <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Forgot Password</a></span>
             </div>
         </div>
-    </section>
+    </div>
 </div>
-
