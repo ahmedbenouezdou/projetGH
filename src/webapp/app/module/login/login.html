@@ -1,21 +1,27 @@
-<div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h1 class="text-center">Welcome</h1>
-        </div>
-        <div class="modal-body">
-            <div class="form-group">
-                <input type="text" class="form-control input-lg" placeholder="Username"/>
-            </div>
-
-            <div class="form-group">
-                <input type="password" class="form-control input-lg" placeholder="Password"/>
-            </div>
-
-            <div class="form-group">
-                <input type="submit" class="btn btn-block btn-lg btn-primary" value="Login"/>
-                <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Forgot Password</a></span>
-            </div>
+<link rel="stylesheet" href='app/module/login/login.css'>
+<div class="container">
+    <div class="stencil">
+        <div class="line">
+            <div class="line"></div>
         </div>
     </div>
+    <div class="border-triangle"></div>
+    <div class="content-triangle"></div>
+    <div class="enter-triangle-one"></div>
+    <div class="enter-triangle-two"></div>
+    <form onsubmit="return false" method="post" id="form">
+        <div class="title">
+            <label>LOG INTO</label>
+            <label>SYSTEM</label>
+        </div>
+        <div class="input-inform">
+            <input type="text" name="name" id="name" placeholder="LOGIN..." />
+            <input type="password" name="password" id="password" placeholder="PASSWORD..." />
+            <input type="button" value="FORGOT PASSWORD?" id="forgot-pas"/>
+        </div>
+        <div class="enter">
+            <label for="enter"></label>
+            <input type="submit" name="submit" value="ENTER" id="enter"/>
+        </div>
+    </form>
 </div>
