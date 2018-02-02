@@ -4,7 +4,7 @@ function securityController() {
 }
 
 angular.module('myProfilModule').component('securityComponent', {
-    templateUrl: 'app/module/myProfil/security.html',
+    templateUrl: 'app/module/myProfil/security/security.html',
     controller: securityController,
     controllerAs: 'ctrl'
 

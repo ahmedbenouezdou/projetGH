@@ -20,7 +20,7 @@ angular.module('myProfilModule').config(function($stateProvider) {
         url: '/security',
         views: {
             "detailProfil":{
-                component: 'myProfilComponent'
+                component: 'securityComponent'
             }
         }
     });
