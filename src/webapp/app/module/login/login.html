@@ -11,17 +11,16 @@
     <div class="enter-triangle-two"></div>
     <form onsubmit="return false" method="post" id="form">
         <div class="title">
-            <label>LOG INTO</label>
-            <label>SYSTEM</label>
+            <img class="light" src="http://beezen.fr/wp-content/uploads/2016/01/logo-light@2x.png"
+                 style="width: 30px; height: 23px; " alt="Logo"> MyBeeZen
         </div>
         <div class="input-inform">
             <input type="text" name="name" id="name" placeholder="LOGIN..." />
             <input type="password" name="password" id="password" placeholder="PASSWORD..." />
-            <input type="button" value="FORGOT PASSWORD?" id="forgot-pas"/>
         </div>
         <div class="enter">
             <label for="enter"></label>
-            <input type="submit" name="submit" value="ENTER" id="enter"/>
+            <input type="submit" name="submit" value="ENTER" id="enter" ng-click="ctrl.login()"/>
         </div>
     </form>
 </div>

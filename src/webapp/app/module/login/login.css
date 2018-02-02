@@ -19,7 +19,7 @@ body {
     position: relative;
 }
 .container .stencil {
-    border: 5px solid #77dff9;
+    border: 5px solid #ed711c;
     height: 440px;
     width: 235px;
     transform: matrix(0.85,0.8,-0.08,0.7,19,43);
@@ -27,7 +27,7 @@ body {
     z-index: 1;
 }
 .container .stencil .line {
-    border: 3px solid #77dff9 ;
+    border: 3px solid #ed711c ;
     height: 94.6%;
     margin: 11px 0;
     border-right: none;
@@ -56,7 +56,7 @@ body {
     position: absolute;
     width: 10px;
     height: 15px;
-    border: 1px solid #71d2ec;
+    border: 1px solid #ed711c;
 
 }
 .container .content-triangle:before {
@@ -72,7 +72,7 @@ body {
 .container .enter-triangle-one {
     position: absolute;
     border-top: 90px solid transparent;
-    border-left: 135px solid #192042;
+    border-left: 135px solid #ed711c;
     border-bottom: 76px solid transparent;
     transform: rotate(51.5deg);
     bottom: 5px;
@@ -83,7 +83,7 @@ body {
     content: '';
     position: absolute;
     border-top: 120px solid transparent;
-    border-left: 188px solid #192042;
+    border-left: 188px solid #ed711c;
     border-bottom: 141px solid transparent;
     transform: rotate(4deg);
     bottom: -129px;
@@ -95,7 +95,7 @@ body {
 .container .enter-triangle-two {
     position: absolute;
     border-top: 111px solid transparent;
-    border-left: 108px solid rgba(40, 65, 143, 0.2);
+    border-left: 108px solid #ed711c;
     border-bottom: 47px solid transparent;
     transform: rotate(51deg);
     bottom: 13px;

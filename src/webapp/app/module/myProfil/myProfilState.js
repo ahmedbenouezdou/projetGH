@@ -6,6 +6,20 @@ angular.module('myProfilModule').config(function($stateProvider) {
             templateUrl: 'app/module/account/menu.html'
         },
             "detail":{
+                templateUrl: 'app/module/myProfil/myProfil.html'
+            }
+        }
+    }).state('account.myProfil.infoProfil',{
+        url: '/infoProfil',
+        views: {
+            "detailProfil":{
+                component: 'myProfilComponent'
+            }
+        }
+    }).state('account.myProfil.security',{
+        url: '/security',
+        views: {
+            "detailProfil":{
                 component: 'myProfilComponent'
             }
         }

@@ -4,7 +4,7 @@ function myProfilController() {
 }
 
 angular.module('myProfilModule').component('myProfilComponent', {
-    templateUrl: 'app/module/myProfil/myProfil.html',
+    templateUrl: 'app/module/myProfil/myInformation.html',
     controller: myProfilController,
     controllerAs: 'ctrl'
 
