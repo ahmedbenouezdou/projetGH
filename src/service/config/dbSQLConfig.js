@@ -5,7 +5,7 @@ const fs = require("fs");
 
 const contents = fs.readFileSync("./src/service/config/configSQL.json");
 const jsonContent = JSON.parse(contents);
-
+const logger = fs.readFileSync("./src/service/configProperties");
 
 const con = mysql.createConnection({
     host: jsonContent.host,
@@ -17,7 +17,7 @@ const con = mysql.createConnection({
 
 
 con.connect(function(err) {
-    if (err) console.log(err);
+    if (err) logger.debug(err);
 });
 
 module.exports = con;

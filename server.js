@@ -2,11 +2,10 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const greetings = require("./src/service/activities/activitiesService");
+const config = require('./config/configServer.json');
 
 
-
-
-app.set('port', '2001');
+app.set('port', process.env.PORT || config.serverLocal.port);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
