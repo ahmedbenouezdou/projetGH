@@ -1,11 +1,11 @@
 
 const mysql = require('mysql');
 const fs = require("fs");
+const logger = require("./src/service/configProperties");
 
-
-const contents = fs.readFileSync("./src/service/config/configSQL.json");
+const contents = fs.readFileSync("../config/configSQL.json");
 const jsonContent = JSON.parse(contents);
-const logger = fs.readFileSync("./src/service/configProperties");
+
 
 const con = mysql.createConnection({
     host: jsonContent.host,
@@ -17,7 +17,7 @@ const con = mysql.createConnection({
 
 
 con.connect(function(err) {
-    if (err) logger.debug(err);
+    if (err) logger.info("test");
 });
 
 module.exports = con;

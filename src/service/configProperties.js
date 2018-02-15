@@ -13,7 +13,7 @@ log4js.configure({
             "absolute": true,
             filename: __dirname + '/logs/logProjetGH.log',
             "maxLogSize": 20480,
-            category: 'Hermes'
+            category: 'projetGH'
         }]
 });
 var logger = log4js.getLogger('projetGH');
