@@ -18,9 +18,6 @@ log4js.configure({
 });
 var logger = log4js.getLogger('projetGH');
 
-
-exports.constant = function () {
-    return {
-        confLog: logger
-    };
+module.exports = {
+    confLog: logger
 };
