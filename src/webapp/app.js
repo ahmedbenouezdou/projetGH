@@ -1,6 +1,6 @@
 var appPersonnel= angular.module('appPersonnel',['ui.router','activitiesModule','homeModule','profilModule',
     'myProfilModule','720kb.datepicker', 'ngAnimate','gestionPersonnelModule','leaveRequestModule','loginModule',
-    'userModule','validActivitiesModule']);
+    'userModule','validActivitiesModule','demandeLeaveModule']);
 
 appPersonnel.config(function($stateProvider,$urlRouterProvider) {
 
@@ -42,17 +42,7 @@ appPersonnel.config(function($stateProvider,$urlRouterProvider) {
                 templateUrl: 'app/module/account/account.html'
             }
         }
-    }).state(validDemande).state(gestionPersonnel).state(profil).state('account.validDemande',{
-        url: '/validDemande',
-        views: {
-            menu:{
-                templateUrl: 'app/module/account/menu.html'
-            },
-            "detail":{
-                templateUrl: 'app/module/validLeave/demandeLeave.html'
-            }
-        }
-    });
+    }).state(validDemande).state(gestionPersonnel).state(profil);
 
     $urlRouterProvider.otherwise('account/home');
 });
@@ -110,6 +100,7 @@ angular.module('validActivitiesModule',['mwl.calendar', 'ngAnimate','calendarMod
 angular.module('homeModule',['barchartModule','ui.router']);
 angular.module('gestionPersonnelModule',['ui.router']);
 angular.module('leaveRequestModule',['ui.router']);
+angular.module('demandeLeaveModule',['ui.router']);
 angular.module('profilModule',['ui.router','activitiesModule']);
 angular.module('myProfilModule',['ui.router']);
 angular.module('loginModule',['ui.router']);
