@@ -1,7 +1,7 @@
 
 const mysql = require('mysql');
 const fs = require("fs");
-const logger = require(__dirname+"/configProperties");
+//const logger = require(__dirname+"/configProperties");
 
 const contents = fs.readFileSync(__dirname+"/configSQL.json");
 const jsonContent = JSON.parse(contents);

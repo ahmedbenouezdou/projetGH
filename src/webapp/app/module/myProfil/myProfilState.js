@@ -23,6 +23,13 @@ angular.module('myProfilModule').config(function($stateProvider) {
                 component: 'securityComponent'
             }
         }
+    }).state('account.myProfil.skill',{
+        url: '/skill',
+        views: {
+            "detailProfil":{
+                component: 'skillConsultantComponent'
+            }
+        }
     });
 
 });
