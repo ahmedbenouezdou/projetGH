@@ -52,7 +52,7 @@
     "run-sequence": "*",
     "serve-static": "1.6.4",
     "underscore-node": "0.1.2",
-    "log4js":"2.5.2"
+    "log4js": "2.5.2"
   },
   "devDependencies": {
     "gulp-connect": "^2.2.0",

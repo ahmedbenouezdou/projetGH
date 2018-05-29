@@ -33,16 +33,16 @@ gulp.task('default', function (callback) {
 
 
 gulp.task('icons', function() {
-    return gulp.src(['./bower_components/bootstrap/fonts/**.*','./bower_components/font-awesome/fonts/**.*'])
-        .pipe(gulp.dest('./src/webapp/fonts'));
+    return gulp.src(['./gh-app/bower_components/bootstrap/fonts/**.*','./gh-app/bower_components/font-awesome/fonts/**.*'])
+        .pipe(gulp.dest('./gh-app/src/webapp/fonts'));
 });
 
 gulp.task('styles', function () {
-    return gulp.src(['./bower_components/bootstrap/dist/css/*.min.css','./bower_components/morrisjs/*.css','./bower_components/angularjs-datepicker/dist/*.css','./bower_components/font-awesome/css/*.min.css'])
+    return gulp.src(['./gh-app/bower_components/bootstrap/dist/css/*.min.css','./gh-app/bower_components/morrisjs/*.css','./gh-app/bower_components/angularjs-datepicker/dist/*.css','./gh-app/bower_components/font-awesome/css/*.min.css'])
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-        .pipe(gulp.dest('./src/webapp/css'))
+        .pipe(gulp.dest('./gh-app/src/webapp/css'))
         .pipe(notify({
             message: 'Styles task complete'
         }));
@@ -58,7 +58,7 @@ gulp.task('scripts-vendor-concat', function () {
         .pipe(concat('vendor.js'))
         .pipe(uglify())
         .pipe(filterJS.restore)
-        .pipe(gulp.dest('./src/webapp/js'))
+        .pipe(gulp.dest('./gh-app/src/webapp/js'))
         .pipe(notify({
             message: 'Scripts task complete'
         }));
@@ -69,14 +69,14 @@ gulp.task('scripts-vendor-concat', function () {
 
 // Création du fichier index.html avec injection des js et css
 gulp.task('index', function () {
-    return gulp.src('./src/webapp/index.html')
-        .pipe(inject(gulp.src(['./src/webapp/js/vendor.js','./src/webapp/**/*.js', './src/webapp/css/**/*.css'], {
+    return gulp.src('./gh-app/src/webapp/index.html')
+        .pipe(inject(gulp.src(['./gh-app/src/webapp/js/vendor.js','./gh-app/src/webapp/**/*.js', './gh-app/src/webapp/css/**/*.css'], {
             read: false
         }), {
-            ignorePath: 'src/webapp',
+            ignorePath: 'gh-app/src/webapp',
             addRootSlash: false
         }))
-        .pipe(gulp.dest('./src/webapp'))
+        .pipe(gulp.dest('./gh-app/src/webapp'))
         .pipe(notify({
             message: 'Index task complete'
         }));
@@ -84,8 +84,8 @@ gulp.task('index', function () {
 
 
 gulp.task('watch', function () {
-    gulp.watch('./src/webapp/scss/**/*.scss', ['styles']);
-    gulp.watch(['./src/webapp/app/**/*.*.js', './src/webapp/css/**/*.css', './src/webapp/**/*.html'], ['index']);
+    gulp.watch('./gh-app/src/webapp/scss/**/*.scss', ['styles']);
+    gulp.watch(['./gh-app/src/webapp/app/**/*.*.js', './gh-app/src/webapp/css/**/*.css', './gh-app/src/webapp/**/*.html'], ['index']);
     gulp.watch('./node/**/*.js', ['server']);
 });
 
@@ -95,8 +95,8 @@ gulp.task('server', function () {
     // Start the server at the beginning of the task
     server.run(['server.js']);
 
-    gulp.watch(['./src/webapp/app/**/*.*.js', './node/**/*.js', './src/webapp/css/**/*.css', './src/webapp/**/*.html'], server.notify);
+    gulp.watch(['./gh-app/src/webapp/app/**/*.*.js', './node/**/*.js', './gh-app/src/webapp/css/**/*.css', './gh-app/src/webapp/**/*.html'], server.notify);
 
-    gulp.watch('src/webapp/scss/**/*.scss', ['styles']);
+    gulp.watch('gh-app/src/webapp/scss/**/*.scss', ['styles']);
     gulp.watch(['server.js'], [server.run]);
 });

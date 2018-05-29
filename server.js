@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const greetings = require("./src/service/activities/activitiesService");
+const greetings = require("./gh-service/activities/activitiesService");
 const config = require('./config/configServer.json');
 
 
@@ -18,7 +18,7 @@ app.all('*', function(req, res, next) {
 app.get('/activitie',greetings.getActivities);
 app.post('/addActivities',greetings.addActivities);
 
-app.use('/', express.static(__dirname + '/src/webapp/'));
+app.use('/', express.static(__dirname + '/gh-app/src/webapp/'));
 
 
 
